@@ -1,3 +1,4 @@
+package main.java.com.library;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +32,15 @@ public class LibraryManager {
                 System.out.println("Magzine " + item.getId() + " : " + ((Magazine) item).getIssue() + status);
             }
         }
+    }
+
+    public LibraryItem findItemById(int id) {
+        for (LibraryItem item : libraryItems) {
+            if (item.getId() == id) {
+                return item;
+            }
+        }
+        return null;
     }
 
 }
