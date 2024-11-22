@@ -1,4 +1,5 @@
-package main.java.com.library;
+package com.library;
+
 import java.time.LocalDate;
 
 public class Book extends LibraryItem {

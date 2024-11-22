@@ -1,4 +1,5 @@
-package main.java.com.library;
+package com.library;
+
 import java.time.LocalDate;
 
 class Magazine extends LibraryItem {
