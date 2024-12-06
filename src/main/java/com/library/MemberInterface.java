@@ -1,11 +1,13 @@
 package com.library;
 
+import java.util.UUID;
+
 interface MemberInterface {
-    String getId();
+    UUID getId();
 
     String getInfo();
 
-    void borrowItem(LibraryItem libraryItem);
+    boolean borrowItem(LibraryItem libraryItem);
 
     void returnItem(LibraryItem libraryItem);
 }
